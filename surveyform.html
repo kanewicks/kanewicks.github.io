@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <style>
+    body {
+      background: rgba(107, 130, 249, 255);
+    }
+
+    .arrow {
+      color: rgba(255, 255, 255, 255);
+      position: absolute;
+      top: 2em;
+      left: 1em;
+    }
+
+    .profile {
+      height: 3.125em;
+      width: 3.125em;
+      border-radius: 100%;
+      position: absolute;
+      top: 2em;
+      left: 4em;
+    }
+
+    .username {
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(255, 255, 255, 255);
+      position: absolute;
+      top: 1.6em;
+      left: 9em;
+    }
+
+    .service {
+      font: 400 0.8125em 'Kumbh Sans', sans-serif;
+      color: rgba(255, 255, 255, 255);
+      position: absolute;
+      top: 3.85em;
+      left: 10.5em;
+    }
+
+    .status {
+      font: 400 0.8125em 'Kumbh Sans', sans-serif;
+      color: rgba(255, 255, 255, 50%);
+      position: absolute;
+      top: 3.85em;
+      right: 5.6em;
+    }
+
+    .more {
+      color: rgba(255, 255, 255, 255);
+      position: absolute;
+      top: 2em;
+      right: 1em;
+    }
+
+    #main {
+      background: rgba(255, 255, 255, 255);
+      height: 43.55em;
+      width: 100%;
+      border: none;
+      border-top-left-radius: 3.125em;
+      border-top-right-radius: 3.125em;
+      position: absolute;
+      top: 7.1875em;
+      left: 0;
+    }
+
+    .segment {
+      color: rgba(255, 142, 161, 255);
+      position: absolute;
+      top: 1em;
+      left: 1em;
+    }
+
+    .fname {
+      font: 700 1em 'Kumbh Sans', sans-serif;
+      color: rgba(0, 0, 0, 255);
+      position: absolute;
+      top: 1.9em;
+      left: 4.1em;
+    }
+
+    #fullName {
+      background: rgba(232, 232, 232, 1);
+      border: none;
+      border-radius: 3.125em;
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(82,83,88,255);
+      position: absolute;
+      top: 3.5em;
+      left: 4.1em;
+      padding: 0.9375em;
+      width: 70%;
+    }
+
+    .emailIcon {
+      color: rgba(255, 142, 161, 255);
+      position: absolute;
+      top: 5em;
+      left: 1em;
+    }
+
+    .mail {
+      font: 700 1em 'Kumbh Sans', sans-serif;
+      color: rgba(0, 0, 0, 255);
+      position: absolute;
+      top: 7.75em;
+      left: 4.1em;
+    }
+
+    #email {
+      background: rgba(232, 232, 232, 1);
+      border: none;
+      border-radius: 3.125em;
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(82,83,88,255);
+      position: absolute;
+      top: 10.75em;
+      left: 4.1em;
+      padding: 0.9375em;
+      width: 70%;
+    }
+
+    .call {
+      color: rgba(255, 142, 161, 255);
+      position: absolute;
+      top: 9.5em;
+      left: 1em;
+    }
+
+    .phone {
+      font: 700 1em 'Kumbh Sans', sans-serif;
+      color: rgba(0, 0, 0, 255);
+      position: absolute;
+      top: 14.55em;
+      left: 4.1em;
+    }
+
+    #telephone {
+      background: rgba(232, 232, 232, 1);
+      border: none;
+      border-radius: 3.125em;
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(82,83,88,255);
+      position: absolute;
+      top: 17.15em;
+      left: 4.1em;
+      padding: 0.9375em;
+      width: 70%;
+    }
+
+    .subject {
+      color: rgba(255, 142, 161, 255);
+      position: absolute;
+      top: 13.5em;
+      left: 1em;
+    }
+
+    .describe {
+      font: 700 1em 'Kumbh Sans', sans-serif;
+      color: rgba(0, 0, 0, 255);
+      position: absolute;
+      top: 20.55em;
+      left: 4.1em;
+    }
+
+    #description {
+      background: rgba(232, 232, 232, 1);
+      border: none;
+      border-radius: 3.125em;
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(82,83,88,255);
+      position: absolute;
+      top: 24.5em;
+      left: 4.1em;
+      padding: 1.5625em;
+      width: 65%;
+      resize: none;
+    }
+
+    #record {
+      background: rgba(255, 142, 161, 255);
+      border: none;
+      border-radius: 3.125em;
+      font: 700 0.9375em 'Kumbh Sans', sans-serif;
+      color: rgba(255, 255, 255, 255);
+      height: 3.125em;
+      width: 50%;
+      padding: 1.25em;
+      position: fixed;
+      bottom: 2em;
+      left: 30%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="top">
+    <span class="material-icons-round arrow">arrow_back_ios_new</span>
+    <img src="https://i.pinimg.com/originals/bc/dd/56/bcdd565fffff2667c6a274625e143bb6.jpg" class="profile">
+    <p class="username">Emily Hoffman</p>
+    <p class="service">Women Hair Repair</p>
+    <p class="status">new client</p>
+    <span class="material-icons-round more">more_vert</span>
+  </div>
+
+  <div id="main">
+    <form action="/action_page">
+      <span class="material-icons-round segment">segment</span>
+      <label for="fullName" class="fname">What's your full name?</label>
+        <br />
+      <input type="text" id="fullName" name="fullName" placeholder="Emily Hoffman">
+        <br />
+      <span class="material-icons-round emailIcon">email</span>
+      <label for="email" class="mail">Enter your email address to receive a response in the future.</label>
+        <br />
+      <input type="text" id="email" name="email" placeholder="emily.hoffman@gmail.com">
+        <br />
+      <span class="material-icons-round call">call</span>
+      <label for="telephone" class="phone">Enter your telephone number.</label>
+        <br />
+      <input type="text" id="telephone" name="telephone" placeholder="+1 (201) 556-4318">
+        <br />
+      <span class="material-icons-round subject">subject</span>
+      <label for="description" class="describe">What kind of shampoo and conditoner do you use?</label>
+        <br />
+      <textarea id="description" name="description" rows="15" cols="50" placeholder="I love to use..."></textarea>
+      <input type="submit" id="record" name="record" value="&#e061; Record reply">
+    </form>
+  </div>
+</body>
+</html>
